@@ -1,0 +1,157 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #005f73;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #94d2bd;
+}
+
+/* Seção de Introdução */
+#intro {
+    background: linear-gradient(135deg, #94d2bd 30%, #005f73 100%);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seções de Conteúdo */
+.content-section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #005f73;
+}
+
+.content-section ul {
+    list-style: none;
+}
+
+.content-section ul li {
+    margin-bottom: 0.8rem;
+}
+
+.content-section ul li a {
+    color: #005f73;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para Código */
+pre {
+    background-color: #e0fbfc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    overflow-x: auto;
+}
+
+code {
+    color: #e63946;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Formulário de Contato */
+form input, form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #005f73;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    padding: 1rem 2rem;
+    background-color: #005f73;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #94d2bd;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #005f73;
+    color: #fff;
+    margin-top: 2rem;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawn Tutor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pawn Tutor</h1>
+        <nav>
+            <ul>
+                <li><a href="#topicos">Tópicos</a></li>
+                <li><a href="#exemplos">Exemplos de Scripts</a></li>
+                <li><a href="#desafios">Projetos de Desafio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Bem-vindo ao seu guia para dominar Pawn!</h2>
+        <p>Explore tutoriais, exemplos e desafios para aprender e aplicar seus conhecimentos na linguagem de programação Pawn.</p>
+    </section>
+
+    <section id="topicos" class="content-section">
+        <h2>Tópicos e Tutoriais</h2>
+        <ul>
+            <li><a href="#">Introdução ao Pawn</a></li>
+            <li><a href="#">Sobre o dono</a></li>
+            <li><a href="#">Funções e Bibliotecas</a></li>
+            <li><a href="#">Exemplos de Scripts</a></li>
+        </ul>
+    </section>
+
+    <section id="exemplos" class="content-section">
+        <h2>Exemplos de Scripts</h2>
+        <p>Veja alguns exemplos de scripts desenvolvidos com Pawn:</p>
+        <pre><code>
+// Exemplo de script simples
+public OnPlayerConnect(playerid) {
+    SendClientMessage(playerid, -1, "Bem-vindo ao servidor!");
+    return 1;
+}
+esse script simples em pawn usa a public OnPlayerConnect, então assim que alguem entrar no servidor ele receberá essa mensagem de boas vindas
+//outro exemplo de script simples pawn
+public OnPlayerDisconnect(playerid,reason)
+{
+    new nome[20]; //cria variavel para armazenar o nome do player
+    GetPlayerName(playerid,nome,sizeof(nome)); // pega o nome do jogador
+    printf("o jogador %s saiu do servidor",nome); // manda a mensagem para o serverlog.txt
+    return 1;
+} 
+esse exemplo manda uma mensagem pro serverlog.txt informando que um jogador saiu do servidor
+</code></pre>
+    </section>
+
+    <section id="desafios" class="content-section">
+        <h2>Projetos de Desafio</h2>
+        <p>Desafios para você praticar e melhorar suas habilidades em Pawn:</p>
+        <ul>
+            <li><a href="sistemlogin.html" target="_blank">Desafio 1: Criar um sistema de login</a></li>
+            <li><a href="https://github.com/SNAKE085/discord-includes" target="_blank">Desafio 2: Crie um sistema de bots intercalado com o gamemode com o meu tutorial no GitHub</a></li>
+        </ul>
+    </section>
+
+    <section id="contato" class="content-section">
+        <h2>Contato</h2>
+        <p>Tem dúvidas? Entre em contato!</p>
+        <form action="" method="get">
+            <pre><code> 
+            para informações de contatos me mande um email ou me chame no discord
+            </code></pre>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aprenda Pawn com SNAKE. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
